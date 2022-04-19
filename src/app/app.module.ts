@@ -12,6 +12,11 @@ import { ContactComponent } from './contact/contact.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 
+import { MdbModalModule } from 'mdb-angular-ui-kit';
+import { MdbFormsModule } from 'mdb-angular-ui-kit';
+
+
+
 
 @NgModule({
   declarations: [
@@ -27,7 +32,10 @@ import { FeedbackComponent } from './feedback/feedback.component';
   imports: [
     BrowserModule,
     MdbModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MdbModalModule,
+    MdbFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
