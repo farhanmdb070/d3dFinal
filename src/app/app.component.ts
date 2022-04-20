@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ContactComponent } from './contact/contact.component';
 import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit';
 
+import { CartComponent } from './cart/cart.component';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,8 @@ import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit';
 export class AppComponent {
 
   modalRef: MdbModalRef<ContactComponent> | null = null;
-  
+  modalRefCart: MdbModalRef<CartComponent> | null = null;
+
   config = {
     animation: true,
     backdrop: true,
@@ -28,6 +31,10 @@ export class AppComponent {
 
   openModal() {
     this.modalRef = this.modalService.open(ContactComponent, this.config);
+  }
+
+  openModalCart() {
+    this.modalRefCart = this.modalService.open(CartComponent, this.config);
   }
 
 }

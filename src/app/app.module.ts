@@ -14,6 +14,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
 
 import { MdbModalModule } from 'mdb-angular-ui-kit';
 import { MdbFormsModule } from 'mdb-angular-ui-kit';
+import { CartComponent } from './cart/cart.component';
+
 
 
 
@@ -27,7 +29,8 @@ import { MdbFormsModule } from 'mdb-angular-ui-kit';
     AboutComponent,
     ContactComponent,
     AppointmentComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
