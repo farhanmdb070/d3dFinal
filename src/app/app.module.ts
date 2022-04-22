@@ -16,6 +16,8 @@ import { MdbModalModule } from 'mdb-angular-ui-kit';
 import { MdbFormsModule } from 'mdb-angular-ui-kit';
 import { CartComponent } from './cart/cart.component';
 
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 
@@ -31,6 +33,7 @@ import { CartComponent } from './cart/cart.component';
     AppointmentComponent,
     FeedbackComponent,
     CartComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,6 @@ import { CartComponent } from './cart/cart.component';
     BrowserAnimationsModule,
     MdbModalModule,
     MdbFormsModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

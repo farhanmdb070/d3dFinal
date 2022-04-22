@@ -1,21 +1,24 @@
-<div class="container px-5 py-5 border border-primary z-depth-5 shadow-3-strong">
-    <h3 class="text-dark font-weight-bolder">Contact Us At</h3> 
-    
-     <h3> <a class="h5" href="tel:555-666-7777">+92-335-8896663</a></h3>
-   
-    <form action="/action_page.php">
-        <div class="mb-3 mt-3">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="email" placeholder="Enter Name" name="Name">
-          </div>
-      <div class="mb-3 mt-3">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-      </div>
-      <div class="mb-3">
-        <label for="comment">Comments:</label>
-<textarea class="form-control" rows="3" id="comment" name="text"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-    </form>
-  </div>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Full Name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
