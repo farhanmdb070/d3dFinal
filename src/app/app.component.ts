@@ -37,5 +37,6 @@ export class AppComponent {
   openModalCart() {
     this.modalRefCart = this.modalService.open(CartComponent, this.config);
   }
+  
 
 }

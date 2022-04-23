@@ -4,13 +4,13 @@
   
 
   <!-- Container wrapper -->
-  <div class="container-fluid shadow-1-strong mb-0 ">
+  <div class="container-fluid shadow-1-strong mb-0">
     <!-- Navbar brand -->
-    <a class="navbar-brand" href="#" >
+    <a class="navbar-logo" href="#" >
       <img
        src="/assets/logo.png"
         height="60"
-        class="z-depth-5 shadow-5"
+        class="z-depth-5 shadow-5 bg-transparent"
         alt=""
         loading="lazy"
       />
@@ -24,29 +24,32 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars color-primary"></i>
     </button>
 
     <!-- Collapsible wrapper -->
     <div
-      class="collapse navbar-collapse container-expand text-center"
+      class="collapse navbar-collapse container-expand text-center p-2"
       id="navbarSupportedContent"
       mdbCollapse
       #basicNavbar="mdbCollapse"
+
     >
       <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 border-top">
+      <ul class="navbar-nav mb-1 mb-lg-0 ">
+        <li class="nav-item ">
+          <a class="nav-link font-weight-strong me-2" href="#"> <i class="fa fa-home me-1"></i>Home</a>        </li>
+
+
+          <li class="nav-item border-info">
+         
+            <a class="nav-link font-weight-strong me-2" href="#"> <i class="fa fa-shopping-cart me-1"></i>Shop</a>
+          </li>
+
         <li class="nav-item">
-          <a class="nav-link font-weight-bold" aria-current="page" href="#">Home</a>
-        </li>
+          <a class="nav-link font-weight-strong me-2" href="#"> <i class="fa fa-phone me-1"></i>Contact</a>        </li>
 
-        <li class="nav-item border-top">
-          <a class="nav-link font-weight-bold  "  aria-current="page" href="#">Shop</a>
-        </li>
-
-        <li class="nav-item border-top">
-          <a class="nav-link font-weight-bold" href="#">Contact</a>
-        </li>
+        
         
         <!--
         

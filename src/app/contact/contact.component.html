@@ -1,24 +1,22 @@
-<div class="container">
-  <form action="action_page.php">
+<form action="/action_page.php" class="p-4">
+  <h2>Contact Us Or Give Feedback</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon mt-3"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
 
-    <label for="fname">Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Full Name">
+  <div class="input-container">                 
+    <i class="fa fa-envelope icon mt-3"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  <div class="input-container">
+    <i class="fa fa-phone icon mt-2"></i>
+    <input class="input-field" type="text-col-3" placeholder="+92-33x-xxxxxxx" name="phone">
+  </div>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+  <label for="subject">Comment</label>
+  <textarea class="input-container" id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-
+  <button type="submit" class="btn">Register</button>
+</form>

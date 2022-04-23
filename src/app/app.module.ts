@@ -17,6 +17,7 @@ import { MdbFormsModule } from 'mdb-angular-ui-kit';
 import { CartComponent } from './cart/cart.component';
 
 import {MatGridListModule} from '@angular/material/grid-list';
+import { CheckoutformComponent } from './checkoutform/checkoutform.component';
 
 
 
@@ -32,16 +33,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
     ContactComponent,
     AppointmentComponent,
     FeedbackComponent,
-    CartComponent,
-    
+    CartComponent    
   ],
   imports: [
     BrowserModule,
     MdbModule,
     BrowserAnimationsModule,
     MdbModalModule,
-    MdbFormsModule
-  ],
+    MdbFormsModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })
