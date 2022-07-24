@@ -15,11 +15,13 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { MdbModalModule } from 'mdb-angular-ui-kit';
 import { MdbFormsModule } from 'mdb-angular-ui-kit';
 import { CartComponent } from './cart/cart.component';
-
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatListModule} from '@angular/material/list';
+import {MatDividerModule} from '@angular/material/divider';
+import { InventoryButtonComponent } from './inventory-button/inventory-button.component';
+import {MatButtonModule} from '@angular/material/button';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { CheckoutformComponent } from './checkoutform/checkoutform.component';
-
-
+import { MainCardComponent } from './main-card/main-card.component';
 
 
 
@@ -33,14 +35,17 @@ import { CheckoutformComponent } from './checkoutform/checkoutform.component';
     ContactComponent,
     AppointmentComponent,
     FeedbackComponent,
-    CartComponent    
+    CartComponent,
+    InventoryButtonComponent,
+    MainCardComponent    
   ],
   imports: [
     BrowserModule,
     MdbModule,
     BrowserAnimationsModule,
     MdbModalModule,
-    MdbFormsModule  ],
+    MdbFormsModule,
+    MatTabsModule,MatListModule,MatDividerModule,MatButtonModule,MatGridListModule  ],
   providers: [],
   bootstrap: [AppComponent]
 })

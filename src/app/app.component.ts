@@ -4,7 +4,10 @@ import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit';
 
 import { CartComponent } from './cart/cart.component';
 
-
+export interface Section {
+  name: string;
+  updated: Date;
+}
 
 @Component({
   selector: 'app-root',
@@ -37,6 +40,32 @@ export class AppComponent {
   openModalCart() {
     this.modalRefCart = this.modalService.open(CartComponent, this.config);
   }
+  folders: Section[] = [
+    {
+      name: 'Photos',
+      updated: new Date('1/1/16'),
+    },
+    {
+      name: 'Recipes',
+      updated: new Date('1/17/16'),
+    },
+    {
+      name: 'Work',
+      updated: new Date('1/28/16'),
+    },
+  ];
+  notes: Section[] = [
+    {
+      name: 'Vacation Itinerary',
+      updated: new Date('2/20/16'),
+    },
+    {
+      name: 'Kitchen Remodel',
+      updated: new Date('1/18/16'),
+    },
+  ];
+
+
   
 
 }

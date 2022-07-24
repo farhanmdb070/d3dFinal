@@ -23,6 +23,7 @@
     "@angular/router": "~11.0.1",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@ngmodule/material-carousel": "^0.6.0",
+    "bootstrap": "^5.2.0",
     "mdb-angular-ui-kit": "file:mdb-angular-ui-kit-1.0.0-beta4.tgz",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
